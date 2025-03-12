@@ -55,10 +55,11 @@ public class Biblioteca {
 	public void adicionar(Scanner sc) {
 		Date data = new Date();
 
-		System.out.println("Nome: ");
-		String nome = sc.next();
+		sc.nextLine();
+		System.out.println("Titulo: ");
+		String nome = sc.nextLine();
 		System.out.println("Autor: ");
-		String autor = sc.next();
+		String autor = sc.nextLine();
 
 		l = new Livros(nome, autor, data);
 

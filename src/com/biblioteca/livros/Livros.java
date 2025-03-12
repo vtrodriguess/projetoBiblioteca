@@ -40,7 +40,7 @@ public class Livros {
 
 	@Override
 	public String toString() {
-		return "" + "\nNome= " + nome + "\nAutor= " + autor + "\nData de cadastrado= " + sdf.format(data) + "";
+		return "" + "\nTítulo = " + nome + "\nAutor = " + autor + "\nData de cadastrado = " + sdf.format(data) + "";
 	}
 
 	@Override

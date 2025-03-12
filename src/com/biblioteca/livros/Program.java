@@ -30,10 +30,11 @@ public class Program {
 				b.remover(r);
 				break;
 			case 3:
+				sc.nextLine();
 				System.out.println("Título: ");
-				String nome = sc.next();
+				String nome = sc.nextLine();
 				System.out.println("Autor: ");
-				String autor = sc.next();
+				String autor = sc.nextLine();
 
 				Livros l = new Livros(nome, autor);
 				if (b.verificarDisponibilidade(l)) {
@@ -43,10 +44,11 @@ public class Program {
 				}
 				break;
 			case 4:
+				sc.nextLine();
 				System.out.println("Título: ");
-				nome = sc.next();
+				nome = sc.nextLine();
 				System.out.println("Autor: ");
-				autor = sc.next();
+				autor = sc.nextLine();
 
 				Date data = new Date();
 
