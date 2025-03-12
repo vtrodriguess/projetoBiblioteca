@@ -15,7 +15,7 @@ public class Program {
 
 		do {
 			System.out.println(
-					"1-CADASTRAR LIVRO \n2-REMOVER LIVRO \n3-DISPONIBILIDADE LIVRO " + "\n4-ALUGAR "
+					"1-CADASTRAR \n2-REMOVER \n3-DISPONIBILIDADE" + "\n4-ALUGAR "
 							+ "\n5-LISTAR LIVROS \n6-ENCERRAR");
 			op = sc.nextInt();
 
@@ -30,7 +30,7 @@ public class Program {
 				b.remover(r);
 				break;
 			case 3:
-				System.out.println("Nome: ");
+				System.out.println("Título: ");
 				String nome = sc.next();
 				System.out.println("Autor: ");
 				String autor = sc.next();
@@ -43,7 +43,7 @@ public class Program {
 				}
 				break;
 			case 4:
-				System.out.println("Nome: ");
+				System.out.println("Título: ");
 				nome = sc.next();
 				System.out.println("Autor: ");
 				autor = sc.next();
@@ -64,8 +64,6 @@ public class Program {
 			}
 
 		} while (op != 6);
-
-		System.out.println(b.toString());
 
 	}
 

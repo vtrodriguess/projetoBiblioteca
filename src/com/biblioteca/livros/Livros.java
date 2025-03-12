@@ -57,7 +57,9 @@ public class Livros {
 		if (getClass() != obj.getClass())
 			return false;
 		Livros other = (Livros) obj;
-		return autor.equalsIgnoreCase(other.autor) && nome.equalsIgnoreCase(other.nome);
+		return Objects.equals(autor, other.autor) && Objects.equals(nome, other.nome);
 	}
 
+	
+	
 }
